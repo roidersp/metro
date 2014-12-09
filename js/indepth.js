@@ -218,11 +218,11 @@ $(".iframe").ready(function(){
 function orientacionCambiada()
 {
     if (window.matchMedia("(orientation: portrait)").matches) {
-  alert("portrait");
+  alert("portrait change");
 }
 
 if (window.matchMedia("(orientation: landscape)").matches) {
-	alert("landscape");
+	alert("landscape change");
    // you're in LANDSCAPE mode
 }
 }
@@ -236,7 +236,7 @@ if (window.matchMedia("(orientation: landscape)").matches) {
    // you're in LANDSCAPE mode
 }
 
-//window.addEventListener("orientationchange", orientacionCambiada, false);
+window.addEventListener("orientationchange", orientacionCambiada, false);
 
 
 $(document).ready(function(){
