@@ -4,57 +4,56 @@
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 2000 756" enable-background="new 0 0 2000 756" xml:space="preserve">
 <g id="Layer_1" display="none">
-	<rect display="inline" fill="#EDE28E" width="2000" height="755.6"/>
-	<g display="inline">
-		<rect x="696.9" y="488.2" fill="#B7AB65" width="95.4" height="266.4"/>
-		<rect x="710.7" y="464.6" fill="#B7AB65" width="67.8" height="38.5"/>
-		<rect x="743.4" y="371.3" fill="#B7AB65" width="12.5" height="112.5"/>
-		<rect x="723.3" y="427.6" fill="#B7AB65" width="10.4" height="56.2"/>
+	<g display="inline" opacity="0.4">
+		<rect x="696.9" y="489.2" fill="#231F20" width="95.4" height="266.4"/>
+		<rect x="710.7" y="465.6" fill="#231F20" width="67.8" height="38.5"/>
+		<rect x="743.4" y="372.3" fill="#231F20" width="12.5" height="112.5"/>
+		<rect x="723.3" y="428.6" fill="#231F20" width="10.4" height="56.2"/>
 	</g>
-	<g display="inline">
-		<rect x="434.3" y="345.9" fill="#B7AB65" width="161.4" height="408.7"/>
-		<rect x="419.8" y="330" fill="#B7AB65" width="190.5" height="33.3"/>
-		<rect x="459.7" y="287.4" fill="#B7AB65" width="110.5" height="83.9"/>
-		<rect x="499.7" y="248.8" fill="#B7AB65" width="30.6" height="59.3"/>
+	<g display="inline" opacity="0.4">
+		<rect x="434.3" y="346.9" fill="#231F20" width="161.4" height="408.7"/>
+		<rect x="419.8" y="331" fill="#231F20" width="190.5" height="33.3"/>
+		<rect x="459.7" y="288.4" fill="#231F20" width="110.5" height="83.9"/>
+		<rect x="499.7" y="249.8" fill="#231F20" width="30.6" height="59.3"/>
 	</g>
-	<g display="inline">
-		<rect x="882.9" y="404.5" fill="#B7AB65" width="286.3" height="348.7"/>
-		<rect x="903.8" y="361.9" fill="#B7AB65" width="89.2" height="86.6"/>
-		<rect x="895.1" y="348.1" fill="#B7AB65" width="109.9" height="21.8"/>
+	<g display="inline" opacity="0.4">
+		<rect x="882.9" y="406.9" fill="#231F20" width="286.3" height="348.7"/>
+		<rect x="903.8" y="364.3" fill="#231F20" width="89.2" height="86.6"/>
+		<rect x="895.1" y="350.5" fill="#231F20" width="109.9" height="21.8"/>
 	</g>
-	<rect x="0" y="247.4" display="inline" fill="#B7AB65" width="86.6" height="505.8"/>
-	<g display="inline">
-		<rect x="1459.7" y="438.3" fill="#B7AB65" width="213.1" height="315.4"/>
-		<rect x="1598.2" y="328.4" fill="#B7AB65" width="13.3" height="135.2"/>
-		<rect x="1620.9" y="370.4" fill="#B7AB65" width="40" height="93.2"/>
+	<rect x="0" y="249.8" display="inline" opacity="0.4" fill="#231F20" width="86.6" height="505.8"/>
+	<g display="inline" opacity="0.4">
+		<rect x="1459.7" y="440.2" fill="#231F20" width="213.1" height="315.4"/>
+		<rect x="1598.2" y="330.4" fill="#231F20" width="13.3" height="135.2"/>
+		<rect x="1620.9" y="372.3" fill="#231F20" width="40" height="93.2"/>
 	</g>
-	<g display="inline">
-		<rect x="234.7" y="143.5" fill="#B7AB65" width="169.7" height="611.1"/>
-		<rect x="253.4" y="12.1" fill="#B7AB65" width="14.8" height="163.4"/>
-		<rect x="295.7" y="31.6" fill="#B7AB65" width="15.7" height="135"/>
-		<rect x="326.2" y="93.8" fill="#B7AB65" width="30.4" height="63.9"/>
-		<rect x="372.3" y="125.7" fill="#B7AB65" width="25.4" height="32"/>
+	<g display="inline" opacity="0.4">
+		<rect x="234.7" y="144.5" fill="#231F20" width="169.7" height="611.1"/>
+		<rect x="253.4" y="13.1" fill="#231F20" width="14.8" height="163.4"/>
+		<rect x="295.7" y="32.6" fill="#231F20" width="15.7" height="135"/>
+		<rect x="326.2" y="94.8" fill="#231F20" width="30.4" height="63.9"/>
+		<rect x="372.3" y="126.7" fill="#231F20" width="25.4" height="32"/>
 	</g>
-	<rect x="1913.4" y="250.1" display="inline" fill="#B7AB65" width="86.6" height="505.8"/>
+	<rect x="1912.3" y="249.8" display="inline" opacity="0.4" fill="#231F20" width="86.6" height="505.8"/>
 </g>
 <g id="Layer_1_copy">
-	<g>
-		<ellipse fill="#F9EFB7" cx="573.6" cy="140.9" rx="78.4" ry="32.7"/>
-		<ellipse fill="#F9EFB7" cx="646.9" cy="97.7" rx="78.4" ry="32.7"/>
+	<g opacity="0.5">
+		<ellipse fill="#FFFFFF" cx="573.6" cy="140.9" rx="78.4" ry="32.7"/>
+		<ellipse fill="#FFFFFF" cx="646.9" cy="97.7" rx="78.4" ry="32.7"/>
 	</g>
-	<g>
-		<ellipse fill="#F9EFB7" cx="1068.9" cy="131.5" rx="90.6" ry="40.6"/>
-		<ellipse fill="#F9EFB7" cx="1144.8" cy="85" rx="90.6" ry="40.6"/>
-		<ellipse fill="#F9EFB7" cx="1212.2" cy="130.5" rx="90.6" ry="40.6"/>
+	<g opacity="0.5">
+		<ellipse fill="#FFFFFF" cx="1068.9" cy="131.5" rx="90.6" ry="40.6"/>
+		<ellipse fill="#FFFFFF" cx="1144.8" cy="85" rx="90.6" ry="40.6"/>
+		<ellipse fill="#FFFFFF" cx="1212.2" cy="130.5" rx="90.6" ry="40.6"/>
 	</g>
-	<g>
-		<ellipse fill="#F9EFB7" cx="188.5" cy="303.9" rx="90.6" ry="40.6"/>
-		<ellipse fill="#F9EFB7" cx="264.5" cy="257.4" rx="90.6" ry="40.6"/>
-		<ellipse fill="#F9EFB7" cx="331.9" cy="302.9" rx="90.6" ry="40.6"/>
+	<g opacity="0.5">
+		<ellipse fill="#FFFFFF" cx="188.5" cy="303.9" rx="90.6" ry="40.6"/>
+		<ellipse fill="#FFFFFF" cx="264.5" cy="257.4" rx="90.6" ry="40.6"/>
+		<ellipse fill="#FFFFFF" cx="331.9" cy="302.9" rx="90.6" ry="40.6"/>
 	</g>
-	<g>
-		<ellipse fill="#F9EFB7" cx="1659.3" cy="219.4" rx="78.4" ry="32.7"/>
-		<ellipse fill="#F9EFB7" cx="1732.6" cy="176.2" rx="78.4" ry="32.7"/>
+	<g opacity="0.5">
+		<ellipse fill="#FFFFFF" cx="1659.3" cy="219.4" rx="78.4" ry="32.7"/>
+		<ellipse fill="#FFFFFF" cx="1732.6" cy="176.2" rx="78.4" ry="32.7"/>
 	</g>
 </g>
 </svg>
