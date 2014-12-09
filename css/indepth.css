@@ -63,10 +63,12 @@
 	background-repeat: repeat-x;
 }
 
-@media screen and (max-height: 414px){
+
+
+@media screen and (max-height: 600px){
 	
 	#horizontal_content{
-	height: 400px;
+	height: 360px;
 
 }
 	

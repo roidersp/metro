@@ -152,19 +152,22 @@ $(".iframe").ready(function(){
 function orientacionCambiada()
 {
 	if(window.orientation==0 || window.orientation==180)
+	skrollr.destroy();
 	
 	if(window.orientation==90 || window.orientation==-90)
-	
-    alert("Me han reorientado a " + indepth_orientacion);   
+	skrollr.init();
 }
 
     if (window.matchMedia("(orientation: portrait)").matches) {
 	    indepth_orientacion=true;
+	    skrollr.destroy()
 		  
 }
 
 if (window.matchMedia("(orientation: landscape)").matches) {
 	indepth_orientacion=false;
+	skrollr.init();
+	
    // you're in LANDSCAPE mode
 }
 
