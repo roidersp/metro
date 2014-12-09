@@ -217,7 +217,7 @@ $(".iframe").ready(function(){
 
 function orientacionCambiada()
 {
-	if (event.orientation)		
+	
     alert("Me han reorientado a " + event.orientation);   
 }
 
