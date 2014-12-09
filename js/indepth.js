@@ -217,14 +217,8 @@ $(".iframe").ready(function(){
 
 function orientacionCambiada()
 {
-    if (window.matchMedia("(orientation: portrait)").matches) {
-  alert("portrait change");
-}
-
-if (window.matchMedia("(orientation: landscape)").matches) {
-	alert("landscape change");
-   // you're in LANDSCAPE mode
-}
+	if (event.orientation)		
+    alert("Me han reorientado a " + event.orientation);   
 }
 
     if (window.matchMedia("(orientation: portrait)").matches) {
