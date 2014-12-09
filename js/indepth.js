@@ -138,7 +138,9 @@ if (window.DISQUS) {
 };
 
 
-
+var indepth_swipe = function(){
+	$("div").swipe( { fingers:'all', allowPageScroll:"vertical"} );
+}
 
 
 indepth_sizeAdjust(true);
@@ -176,41 +178,13 @@ if (window.matchMedia("(orientation: landscape)").matches) {
 }
 	var ventana_alto = $(window).height();
 	var mobile=detect_mobile();
-	if(!mobile){
-		
-		var dta_ventana=ventana_alto-60-(ventana_alto*.20);
-		$('#indepth_cover').css("height",(ventana_alto-60-(ventana_alto*.20))+"px");
-		$('#indepth_cover').attr("data-0","height:"+(dta_ventana)+"px");
-		$('#indepth_cover').attr("data-50","height:"+(dta_ventana*.75)+"px;");
-		$('#indepth_cover').attr("data-100","height:"+(dta_ventana*.50)+"px;");
-		$('#indepth_cover').attr("data-1500","height:"+(dta_ventana*.60)+"px;");
-		
-	}else{
-		$('#indepth_cover').css("height",(ventana_alto-60)+"px");
-	}
+	
 	indepth_preloadImgs();
 	
-	if(navigator.platform == 'iPad' || navigator.platform == 'iPhone' || navigator.platform == 'iPod' || navigator.platform == 'Android')
-    {   	
+	indepth_swipe();
     
-			 $('#indepth_cover_view').css("position","absolute");
-    }else{
-    	
-    	 if(ventana_alto>600){
-	 	$('.indepth_break').css("height",(ventana_alto*.80)+"px");
-
-
-	 	$('#indepth_cover .indepth_cover_back_body').css("top",ventana_alto*.60);
- 	}
-	 //ventana_alto=ventana_alto-(ventana_alto*.15)
-	 	//$('.indepth_anuncio_section').css("height",ventana_alto-(ventana_alto*.10)+"px");
-    }
     
-    if(navigator.platform == 'iPad'){
-	    //$("#indepth_parallax_back").css("background-size", "100%");
-	    $("#indepth_parallax_back").css("background-attachment", "initial");
-	    console.log("ipad")
-    }
+    
 		loadDisqus($("#indepth_coments"),disqus_url, "http://juanfutbol.com/indepth/"+disqus_url);
 		var ventana_alto = $(window).height();
     	
