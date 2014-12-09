@@ -144,7 +144,7 @@ var indepth_swipe = function(){
 	function swipe1(event, phase, direction, distance) {
         //alert(distance);
         var actual_top=$(window).scrollTop();
-        $('html, body').animate({ scrollTop: (actual_top+distance)}, 200);
+        $('.indepth_pages').animate({ scrollTop: (actual_top+distance)}, 200);
         //$('html, body').animate({ scrollTop: $("#elemento_al_que_va").offset().top}, 2000);
       }
 }
