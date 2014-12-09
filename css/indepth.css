@@ -43,9 +43,9 @@
 	width: 800%;
 	height: 756px;
 	position: fixed;
-	top: 0px;
+	bottom: 0px;
 	left: 0px;
-	background: rgb(239, 230, 153);
+	background: transparent;
 }
 
 .indepth_estacion{

@@ -212,14 +212,24 @@ $(".iframe").ready(function(){
 	$(".iframe .player .rounded-box").css("background","rgba(176, 215, 0, 0.75)");
 })
 
-if (window.matchMedia("(orientation: portrait)").matches) {
+
+
+
+function orientacionCambiada()
+{
+    if (window.matchMedia("(orientation: portrait)").matches) {
   alert("portrait");
 }
 
 if (window.matchMedia("(orientation: landscape)").matches) {
-	alert("landscape");
+	alert("portrait");
    // you're in LANDSCAPE mode
 }
+}
+
+window.addEventListener("orientationchange", orientacionCambiada, false);
+
+
 $(document).ready(function(){
 	indepth_sizeAdjust(true);
 	indepth_menu();
