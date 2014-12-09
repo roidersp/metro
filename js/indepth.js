@@ -212,6 +212,13 @@ $(".iframe").ready(function(){
 	$(".iframe .player .rounded-box").css("background","rgba(176, 215, 0, 0.75)");
 })
 
+function orientacionCambiada()
+{
+    alert(window.orientation);
+}
+
+window.addEventListener("orientationchange", orientacionCambiada, false);
+
 $(document).ready(function(){
 	indepth_sizeAdjust(true);
 	indepth_menu();
