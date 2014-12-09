@@ -218,7 +218,7 @@ $(".iframe").ready(function(){
 function orientacionCambiada()
 {
 	
-    alert("Me han reorientado a " + windows.orientation);   
+    alert("Me han reorientado a " + window.orientation);   
 }
 
     if (window.matchMedia("(orientation: portrait)").matches) {
