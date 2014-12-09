@@ -5,6 +5,7 @@ var disqus_number_c=2;
 var disqus_per_page=3;
 var tamaño_total=1920;
 var indepth_orientacion=true; /*** true para vertical, false para vertical  ***/
+var s;
 
 $(document).on("click", "#indepth_button_ver" ,function(){
 		var position = $(".indepth_content_top").position();
@@ -29,7 +30,7 @@ $(document).on("click",".indepth_menu_item",function(){
 	 });
 
 var indepth_skrllr=function(){
-	 var s = skrollr.init();
+	 s = skrollr.init();
 
 }
 
@@ -152,31 +153,29 @@ $(".iframe").ready(function(){
 function orientacionCambiada()
 {
 	if(window.orientation==0 || window.orientation==180)
-	skrollr.destroy();
+	s.destroy();
 	
 	if(window.orientation==90 || window.orientation==-90)
-	skrollr.init();
+	indepth_skrllr();
 }
 
-    if (window.matchMedia("(orientation: portrait)").matches) {
-	    indepth_orientacion=true;
-	    skrollr.destroy()
-		  
-}
-
-if (window.matchMedia("(orientation: landscape)").matches) {
-	indepth_orientacion=false;
-	skrollr.init();
-	
-   // you're in LANDSCAPE mode
-}
+   
 
 window.addEventListener("orientationchange", orientacionCambiada, false);
 
 
 $(document).ready(function(){
 	indepth_sizeAdjust(true);
+	 
+
+if (window.matchMedia("(orientation: landscape)").matches) {
+	indepth_orientacion=false;
 	indepth_skrllr();
+	
+   // you're in LANDSCAPE mode
+}
+
+console.log(indepth_orientacion);
 	var ventana_alto = $(window).height();
 	var mobile=detect_mobile();
 	if(!mobile){
