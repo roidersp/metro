@@ -4,6 +4,7 @@ var disqus_url="86372c07-97fa-42ba-b6cd-a12f3be067e3";
 var disqus_number_c=2;
 var disqus_per_page=3;
 var tamaño_total=1920;
+var indepth_orientacion=true; /*** true para vertical, false para vertical  ***/
 
 $(document).on("click", "#indepth_button_ver" ,function(){
 		var position = $(".indepth_content_top").position();
@@ -29,73 +30,6 @@ $(document).on("click",".indepth_menu_item",function(){
 
 var indepth_skrllr=function(){
 	 var s = skrollr.init();
-
-}
-
-var indepth_menu=function(){
-	$('.indepth_cover').waypoint(function(direction) {
-		$("#indepth_menu").fadeOut();
-		$(".indepth_share").fadeOut();
-	});
-	
-	 $('#indepth_distrito0').waypoint(function(direction) {
-		 if(direction=='down'){
-			 $("#indepth_menu").fadeIn("slow");
-			 $(".indepth_share").fadeIn("slow");
-		 }else{
-			  $("#indepth_menu").fadeOut();
-			   $(".indepth_share").fadeOut();
-		 }
-		 
-		 $("#indepth_menu").show();
-		  $(".indepth_share").show();
-		 $(".indepth_menu").removeClass("active");
-		 var num_menu=$(this).attr("num");
-		 $("#indepth_menu_0").addClass("active");
-		 
-		
-	});
-	
-	 $('#indepth_footer').waypoint(function(direction) {
-		 if(direction=='down'){
-			 $("#indepth_menu").fadeOut();
-			 $(".indepth_share").fadeOut("slow");
-		 }else{
-			  $("#indepth_menu").fadeIn("slow");
-			  $(".indepth_share").fadeIn("slow");
-		 }
-		 
-		
-	},{offset: 'bottom-in-view'});
-	
-	
-	
-	
-	$(".indepth_distritos").waypoint(function(direction){
-		 $("#indepth_menu").show();
-		 $(".indepth_share").show();
-		 $(".indepth_menu_item").removeClass("active");
-		 var num_menu=$(this).attr("num");
-		 $("#indepth_menu_"+num_menu).addClass("active");		 
-	},{offset: '70px'});
-	
-	$(".indepth_distritos").waypoint(function(direction){
-		 $("#indepth_menu").show();
-		 $(".indepth_share").show();
-		 $(".indepth_menu_item").removeClass("active");
-		 var num_menu=$(this).attr("num");
-		 $("#indepth_menu_"+num_menu).addClass("active");
-		 
-	},{offset: 'bottom-in-view'});
-	
-	$("#indepth_distritos").waypoint(function(direction){
-		$(".indepth_menu_item").removeClass("active");
-		 $("#indepth_menu_0").addClass("active");
-	},{offset: 'bottom-in-view'});
-	
-	 $("#indepth_menu").hide();
-	 
-	 
 
 }
 
@@ -217,16 +151,24 @@ $(".iframe").ready(function(){
 
 function orientacionCambiada()
 {
+	if(window.orientation==0 || window.orientation==180)
+	indepth_orientacion=true;
 	
-    alert("Me han reorientado a " + window.orientation);   
+	if(window.orientation==90 || window.orientation==-90)
+	indepth_orientacion=false;
+	
+    alert("Me han reorientado a " + indepth_orientacion);   
 }
 
     if (window.matchMedia("(orientation: portrait)").matches) {
-  alert("portrait");
+	    indepth_orientacion=true;
+		  alert(indepth_orientacion);
+		  
 }
 
 if (window.matchMedia("(orientation: landscape)").matches) {
-	alert("landscape");
+	indepth_orientacion=false;
+	alert(indepth_orientacion);
    // you're in LANDSCAPE mode
 }
 
@@ -235,7 +177,6 @@ window.addEventListener("orientationchange", orientacionCambiada, false);
 
 $(document).ready(function(){
 	indepth_sizeAdjust(true);
-	indepth_menu();
 	indepth_skrllr();
 	var ventana_alto = $(window).height();
 	var mobile=detect_mobile();
