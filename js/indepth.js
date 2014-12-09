@@ -141,8 +141,11 @@ if (window.DISQUS) {
 var indepth_swipe = function(){
 	$(".indepth_pages").swipe( { fingers:'all',swipeLeft:swipe1, swipeRight:swipe1, allowPageScroll:"vertical"} );
 	
-	function swipe2(event, phase, direction, distance) {
-        alert(distance);
+	function swipe1(event, phase, direction, distance) {
+        //alert(distance);
+        var actual_top=$(window).scrollTop();
+        $('html, body').animate({ scrollTop: (actual_top+distance)}, 200);
+        //$('html, body').animate({ scrollTop: $("#elemento_al_que_va").offset().top}, 2000);
       }
 }
 
