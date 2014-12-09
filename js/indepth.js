@@ -227,6 +227,15 @@ if (window.matchMedia("(orientation: landscape)").matches) {
 }
 }
 
+    if (window.matchMedia("(orientation: portrait)").matches) {
+  alert("portrait");
+}
+
+if (window.matchMedia("(orientation: landscape)").matches) {
+	alert("portrait");
+   // you're in LANDSCAPE mode
+}
+
 window.addEventListener("orientationchange", orientacionCambiada, false);
 
 
