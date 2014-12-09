@@ -139,7 +139,11 @@ if (window.DISQUS) {
 
 
 var indepth_swipe = function(){
-	$("div").swipe( { fingers:'all', allowPageScroll:"vertical"} );
+	$("div").swipe( { fingers:'all',swipeLeft:swipe1, swipeRight:swipe1, allowPageScroll:"vertical"} );
+	
+	function swipe2(event, phase, direction, distance) {
+        alert(distance);
+      }
 }
 
 
