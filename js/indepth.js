@@ -236,7 +236,7 @@ if (window.matchMedia("(orientation: landscape)").matches) {
    // you're in LANDSCAPE mode
 }
 
-window.addEventListener("orientationchange", orientacionCambiada, false);
+//window.addEventListener("orientationchange", orientacionCambiada, false);
 
 
 $(document).ready(function(){
