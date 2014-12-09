@@ -174,8 +174,6 @@ if (window.matchMedia("(orientation: landscape)").matches) {
 	
    // you're in LANDSCAPE mode
 }
-
-console.log(indepth_orientacion);
 	var ventana_alto = $(window).height();
 	var mobile=detect_mobile();
 	if(!mobile){
