@@ -222,7 +222,7 @@ function orientacionCambiada()
 }
 
 if (window.matchMedia("(orientation: landscape)").matches) {
-	alert("portrait");
+	alert("landscape");
    // you're in LANDSCAPE mode
 }
 }
@@ -232,7 +232,7 @@ if (window.matchMedia("(orientation: landscape)").matches) {
 }
 
 if (window.matchMedia("(orientation: landscape)").matches) {
-	alert("portrait");
+	alert("landscape");
    // you're in LANDSCAPE mode
 }
 
