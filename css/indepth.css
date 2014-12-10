@@ -71,6 +71,13 @@
 	height: 360px;
 
 }
+
+@media screen and (max-width: 480px){
+	
+	#horizontal_content{
+	height: 360px;
+
+}
 	
 	
 }
