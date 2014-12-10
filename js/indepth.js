@@ -192,7 +192,7 @@ if (window.matchMedia("(orientation: landscape)").matches) {
     
     
     
-		loadDisqus($("#indepth_coments"),disqus_url, "http://juanfutbol.com/indepth/"+disqus_url);
+		//loadDisqus($("#indepth_coments"),disqus_url, "http://juanfutbol.com/indepth/"+disqus_url);
 		var ventana_alto = $(window).height();
     	
     	 if(ventana_alto>600){
