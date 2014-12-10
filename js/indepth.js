@@ -7,6 +7,32 @@ var tamaño_total=1920;
 var indepth_orientacion=true; /*** true para vertical, false para vertical  ***/
 var s;
 
+
+
+
+var lastScrollLeft = 0;
+$(window).scroll(function() {
+    var documentScrollLeft = $(document).scrollLeft();
+    if (lastScrollLeft != documentScrollLeft) {
+        console.log('scroll x');
+        lastScrollLeft = documentScrollLeft;
+        console.log(lastScrollLeft);
+        $('html, body').scrollTop(lastScrollLeft);
+		
+    }
+});
+
+window.addEventListener("load",function() {
+	// Set a timeout...
+	setTimeout(function(){
+		// Hide the address bar!
+		window.scrollTo(0, 1);
+	}, 0);
+});
+
+
+
+
 $(document).on("click", "#indepth_button_ver" ,function(){
 		var position = $(".indepth_content_top").position();
 		$('html, body').animate({
@@ -138,17 +164,6 @@ if (window.DISQUS) {
 };
 
 
-var indepth_swipe = function(){
-	$(".indepth_pages").swipe( { fingers:'all',swipeLeft:swipe1, swipeRight:swipe1, allowPageScroll:"vertical"} );
-	
-	function swipe1(event, phase, direction, distance) {
-        //alert(distance);
-        var actual_top=$(window).scrollTop();
-        $('.indepth_pages').animate({ scrollTop: (actual_top+distance)}, 200);
-        //$('html, body').animate({ scrollTop: $("#elemento_al_que_va").offset().top}, 2000);
-      }
-}
-
 
 indepth_sizeAdjust(true);
 
@@ -157,20 +172,6 @@ $(".iframe").ready(function(){
 })
 
 
-
-
-function orientacionCambiada()
-{
-	if(window.orientation==0 || window.orientation==180)
-	s.destroy();
-	
-	if(window.orientation==90 || window.orientation==-90)
-	indepth_skrllr();
-}
-
-   
-
-window.addEventListener("orientationchange", orientacionCambiada, false);
 
 
 $(document).ready(function(){
@@ -188,7 +189,6 @@ if (window.matchMedia("(orientation: landscape)").matches) {
 	
 	indepth_preloadImgs();
 	
-	indepth_swipe();
     
     
     
