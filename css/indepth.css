@@ -63,15 +63,27 @@
 	background-repeat: repeat-x;
 }
 
-#vias {
+
+#metro{
+	z-index: 50;
+	position: fixed;
+	left: 30px;
+	bottom: 101px;
+	height: 110px;
+	
+	
+}
+
+#metro_vias {
 	width: 100%;
 	background-image: url(../images/vias-01.svg);
 	background-repeat: repeat-x;
-	height: 10%;
-	position: absolute;
-	z-index: 2;
-	bottom: 8%;
+	height: 33px;
+	position: fixed;
+	z-index: 50;
+	bottom: 70px;
 }
+
 
 .elements{
 	display: inline-block;
