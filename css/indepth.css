@@ -6,7 +6,7 @@
 	overflow: hidden;
 	background-color: white;
 	font-family: 'Roboto';
-	font-size: 19px;
+	font-size: 1px;
 	margin: auto;
 }
 
@@ -63,33 +63,43 @@
 	background-repeat: repeat-x;
 }
 
-
+/***** metro y vias *****/
 #metro{
 	z-index: 50;
 	position: fixed;
-	left: 30px;
-	bottom: 101px;
-	height: 110px;
-	
-	
+	left: 10%;
+	bottom: 101em;
+	height: 110em;
 }
 
 #metro_vias {
 	width: 100%;
 	background-image: url(../images/vias-01.svg);
 	background-repeat: repeat-x;
-	height: 33px;
+	height: 33em;
 	position: fixed;
 	z-index: 50;
-	bottom: 70px;
+	bottom: 70em;
 }
+
+/***E Elementos generales ***/
+
+.metro_torre{
+	height: 90%;
+	bottom: 0px;
+}
+
+
+
+/**** Primera estacion ****/
+
+
+
 
 
 .elements{
 	display: inline-block;
 	position: absolute;
-	bottom: 17%;
-	height: 100%;
 }
 
 
@@ -98,15 +108,29 @@
 	#horizontal_content{
 		height: 360px;
 	}
+	
+	.indepth_pages{
+		font-size: .45px;
+	}
+	
+	
 
 }
+
+@media screen and (max-height: 360px){
+	.indepth_pages{
+		font-size: .35px;
+	}
+}
+
 
 @media screen and (max-width: 480px){
 	
 	#horizontal_content{
 	height: 360px;
-
 }
+
+
 	
 	
 }
