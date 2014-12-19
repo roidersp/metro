@@ -133,20 +133,16 @@ if (window.DISQUS) {
 }
 };
 
-
 $(document).ready(function(){
 	indepth_sizeAdjust(true);
 	if (window.matchMedia("(orientation: landscape)").matches) {
 		indepth_orientacion=false;
 		indepth_skrllr();
-		
 	}
 	var ventana_alto = $(window).height();
 	var mobile=detect_mobile();
 	indepth_preloadImgs();
-    //loadDisqus($("#indepth_coments"),disqus_url, "http://juanfutbol.com/indepth/"+disqus_url);
-
-		
+    //loadDisqus($("#indepth_coments"),disqus_url, "http://juanfutbol.com/indepth/"+disqus_url);	
 });
 
 $(window).on("resize", function(){
