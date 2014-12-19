@@ -12,7 +12,7 @@ var s;
 
 var lastScrollLeft = 0;
 $(window).scroll(function() {
-    var documentScrollLeft = $(document).scrollLeft();
+    var documentScrollLeft = $(document).scrollLeft();    
     if (lastScrollLeft != documentScrollLeft) {
         console.log('scroll x');
         lastScrollLeft = documentScrollLeft;

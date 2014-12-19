@@ -63,12 +63,29 @@
 	background-repeat: repeat-x;
 }
 
+#vias {
+	width: 100%;
+	background-image: url(../images/vias-01.svg);
+	background-repeat: repeat-x;
+	height: 10%;
+	position: absolute;
+	z-index: 2;
+	bottom: 8%;
+}
+
+.elements{
+	display: inline-block;
+	position: absolute;
+	bottom: 17%;
+	height: 100%;
+}
 
 
 @media screen and (max-height: 600px){
 	
 	#horizontal_content{
-	height: 360px;
+		height: 360px;
+	}
 
 }
 
