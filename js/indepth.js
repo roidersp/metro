@@ -7,18 +7,16 @@ var tamaño_total=1920;
 var indepth_orientacion=true; /*** true para vertical, false para vertical  ***/
 var s;
 
-
-
-
+/***** Manejo de scroll ****/
 var lastScrollLeft = 0;
 $(window).scroll(function() {
-    var documentScrollLeft = $(document).scrollLeft();    
+    var documentScrollLeft = $(document).scrollLeft();
+     var documentScrollTop = $(document).scrollTop();
     if (lastScrollLeft != documentScrollLeft) {
-        console.log('scroll x');
         lastScrollLeft = documentScrollLeft;
-        console.log(lastScrollLeft);
         $('html, body').scrollTop(lastScrollLeft);
-		
+    }else{
+        $('html, body').scrollLeft(documentScrollTop);
     }
 });
 
@@ -30,36 +28,9 @@ window.addEventListener("load",function() {
 	}, 0);
 });
 
-
-
-
-$(document).on("click", "#indepth_button_ver" ,function(){
-		var position = $(".indepth_content_top").position();
-		$('html, body').animate({
-			scrollTop: position.top
-		}, 2000);
-	});
-
-$(document).on("click",".indepth_menu_item",function(){
-		 console.log("test");
-		 var num_menu=$(this).attr("num");
-		 var position = $("#indepth_distrito"+num_menu).position();
-		 var f_top
-		 if(detect_mobile()){
-			 f_top=position.top-61;
-		 }else{
-			 f_top=position.top;
-		 }
-		$('html, body').animate({
-			scrollTop: f_top
-		}, 000);
-	 });
-
 var indepth_skrllr=function(){
 	 s = skrollr.init();
-
 }
-
 
 var indepth_sizeAdjust = function(firstTime){
 	$(".indepth_page").each(function(){
@@ -81,7 +52,6 @@ var indepth_preloadImgs = function(){
 		}).on("mouseleave", function(){
 			$(this).attr("src", $(this).attr("out"));
 		}).css("cursor", "pointer");
-
 		var tmp = $("<img/>");
 		tmp.attr("src", $(this).attr("over"));
 		tmp.css({"position":"absolute", "top":"-9999px", "left":"-9999px"})
@@ -89,7 +59,7 @@ var indepth_preloadImgs = function(){
 	});
 }
 
-  var detect_mobile=function(){
+var detect_mobile=function(){
 	 var isMobile = {
     Android: function() {
         return navigator.userAgent.match(/Android/i);
@@ -164,70 +134,21 @@ if (window.DISQUS) {
 };
 
 
-
-indepth_sizeAdjust(true);
-
-$(".iframe").ready(function(){
-	$(".iframe .player .rounded-box").css("background","rgba(176, 215, 0, 0.75)");
-})
-
-
-
-
 $(document).ready(function(){
 	indepth_sizeAdjust(true);
-	 
-
-if (window.matchMedia("(orientation: landscape)").matches) {
-	indepth_orientacion=false;
-	indepth_skrllr();
-	
-   // you're in LANDSCAPE mode
-}
+	if (window.matchMedia("(orientation: landscape)").matches) {
+		indepth_orientacion=false;
+		indepth_skrllr();
+		
+	}
 	var ventana_alto = $(window).height();
 	var mobile=detect_mobile();
-	
 	indepth_preloadImgs();
-	
-    
-    
-    
-		//loadDisqus($("#indepth_coments"),disqus_url, "http://juanfutbol.com/indepth/"+disqus_url);
-		var ventana_alto = $(window).height();
-    	
-    	 if(ventana_alto>600){
-	 	
-	 	$('#indepth_cover .indepth_cover_back_body').css("top",ventana_alto*.60);
- 	}
+    //loadDisqus($("#indepth_coments"),disqus_url, "http://juanfutbol.com/indepth/"+disqus_url);
+
 		
 });
 
 $(window).on("resize", function(){
 	indepth_sizeAdjust(false);
-	
-	 if(navigator.platform == 'iPad'){
-	    //$("#indepth_parallax_back").css("background-size", "100%");
-	    $("#indepth_parallax_back").css("background-attachment", "initial");
-    }
-	 if(navigator.platform == 'iPad' || navigator.platform == 'iPhone' || navigator.platform == 'iPod' || navigator.platform == 'Android')
-    { 
-    }else{
-    	var ventana_alto = $(window).height();
-	 //ventana_alto=ventana_alto-(ventana_alto*.15)
-	 	//$('.indepth_anuncio_section').css("height",ventana_alto-(ventana_alto*.10)+"px");
-    }
-    
-    var ventana_alto = $(window).height();
-	var mobile=detect_mobile();
-	if(!mobile){
-		var dta_ventana=ventana_alto-60-(ventana_alto*.20);
-		$('#indepth_cover').css("height",(ventana_alto-60-(ventana_alto*.20))+"px");
-		$('#indepth_cover').attr("data-0","height:"+(dta_ventana)+"px;margin-top:0px;");
-		$('#indepth_cover').attr("data-50","height:"+(dta_ventana*.75)+"px;margin-top:50px;");
-		$('#indepth_cover').attr("data-100","height:"+(dta_ventana*.50)+"px;margin-top:100px;");
-		$('#indepth_cover').attr("data-1500","height:"+(dta_ventana*.60)+"px;margin-top:150px;");
-		indepth_skrllr();
-	}else{
-		$('#indepth_cover').css("height",(ventana_alto-60)+"px");
-	}
 })
