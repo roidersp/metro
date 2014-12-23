@@ -115,9 +115,13 @@
 	z-index: 40;
 }
 
+
+
+
+
 .metro_texto_c1{
 	width: 320px;
-	height: 200px;
+	height: auto;
 	position: absolute;
 	display: block;
 	color: white;
@@ -190,8 +194,43 @@
 	}
 	
 	.indepth_pages{
-		font-size: .45px;
+		font-size: .4px;
 	}
+	
+	.metro_texto_c1{
+	width: 200px;
+	position: absolute;
+	display: block;
+	color: white;
+}
+
+.metro_texto_c1 .metro_texto_header{
+	background: #d51b00; /* Old browsers */
+	height: 30px;
+	line-height: 30px;
+	width: 100%;
+	font-size: 20px;
+	padding: 0 10px ;
+	
+	
+}
+
+.metro_texto_c1 .metro_texto_content{
+	padding: 10px 10px ;
+
+}
+
+.metro_texto_c1 .metro_texto_normal{
+	font-size: 16px;
+}
+
+.metro_texto_c1 .metro_texto_big{
+	font-size: 32px;
+	font-weight: 600;
+	line-height: 36px;
+}
+	
+	
 	
 	
 
