@@ -18,6 +18,8 @@ $(window).scroll(function() {
     }else{
         $('html, body').scrollLeft(documentScrollTop);
     }
+    
+    console.log($(document).scrollTop());
 });
 
 window.addEventListener("load",function() {

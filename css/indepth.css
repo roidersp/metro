@@ -1,8 +1,6 @@
 .indepth_pages{
-	width: 8000%;
-	height: 8000%;
 	min-width: 960px;
-	position: absolute;
+	position: fixed;
 	overflow: hidden;
 	background-color: white;
 	font-family: 'Roboto';
@@ -10,6 +8,8 @@
 	margin: auto;
 	text-transform: uppercase;
 	font-family: 'Roboto';
+	width: 100%;
+	height: 100%;
 	
 }
 
@@ -43,7 +43,7 @@
 
 .horizontal_content{
 	display: table;
-	width: 800%;
+	width: auto;
 	height: 756px;
 	position: fixed;
 	bottom: 0px;
@@ -53,7 +53,6 @@
 
 .indepth_estacion{
 	float: left;
-	//background-image: url(../images/fondo_nubes_1.svg);
 	width: 100%;
 	height: 100%;;
 	background-size: auto 100%;
