@@ -137,6 +137,7 @@
 	color: white;
 }
 
+
 .metro_texto_c1 .metro_texto_header{
 	background: #d51b00; /* Old browsers */
 	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
@@ -183,6 +184,29 @@
 	line-height: 46px;
 }
 
+
+.metro_texto_c2{
+	width: 330px;
+	height: auto;
+	position: absolute;
+	display: block;
+}
+
+.metro_texto_c2 .metro_texto_header{
+	color: white;
+	background: #080606;
+	font-size: 23px;
+	height: 44px;
+	line-height: 44px;
+	padding: 0 15px;
+}
+
+.metro_texto_c2 .metro_texto_content{
+	color: #080606;
+	background: white;
+	font-size: 21px;
+	padding: 15px;
+}
 
 
 /**** Primera estacion ****/
