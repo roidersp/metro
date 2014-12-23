@@ -246,11 +246,25 @@
 
 @media screen and (max-width: 480px){
 	
-	#horizontal_content{
-	height: 360px;
+		#horizontal_content{
+		height: 360px;
+	}
+	
 }
 
+/******************* vocho *******************/
+.metro_texto_c10{
+	width: 320px;
+	height: auto;
+	position: absolute;
+	display: block;
+	color: #00285e;
+}
 
-	
+.metro_texto_c10 .metro_texto_header{
+	font-size: 50em;
+}
+
+.metro_texto_c10 .metro_texto_content{
 	
 }
