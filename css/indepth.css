@@ -52,6 +52,15 @@
 	
 }
 
+
+.horizontal_content.back{
+	z-index: 1;
+}
+
+.horizontal_content.front{
+	z-index: 200;
+}
+
 .indepth_estacion{
 	float: left;
 	width: 100%;
