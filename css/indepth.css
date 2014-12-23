@@ -42,13 +42,14 @@
 }
 
 .horizontal_content{
-	display: table;
+	display: inline-flex;
 	width: auto;
 	height: 756px;
 	position: fixed;
 	bottom: 0px;
 	left: 0px;
 	background: transparent;
+	
 }
 
 .indepth_estacion{
