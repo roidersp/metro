@@ -81,7 +81,7 @@
 #metro{
 	z-index: 50;
 	position: fixed;
-	left: 10%;
+	left: 50em;
 	bottom: 101em;
 	height: 110em;
 }
@@ -190,6 +190,7 @@
 	height: auto;
 	position: absolute;
 	display: block;
+	font-weight: 600;
 }
 
 .metro_texto_c2 .metro_texto_header{
@@ -201,17 +202,43 @@
 	padding: 0 15px;
 }
 
+.metro_texto_c2.rojo .metro_texto_header{
+	background: #d51b00;
+}
+
 .metro_texto_c2 .metro_texto_content{
 	color: #080606;
 	background: white;
-	font-size: 21px;
+	font-size: 22px;
 	padding: 15px;
+}
+
+.metro_texto_c3 .metro_text_left{
+	width: 48em;
+	float: left;
+}
+
+.metro_texto_c3 .metro_text_r{
+	float: left;
+	
+}
+
+.metro_texto_c3 .metro_texto_big{
+	font-size: 32px;
+	font-weight: 600;
+	padding-left: 25px;
+	line-height: 32px;
+	color: #002449;
+}
+
+.metro_texto_c3 .metro_texto_normal{
+	font-size: 20px;
+	margin-left: 25px;
+	line-height: 20px;
 }
 
 
 /**** Primera estacion ****/
-
-
 
 
 

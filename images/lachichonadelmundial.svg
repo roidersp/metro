@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 17.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 720 720" enable-background="new 0 0 720 720" xml:space="preserve">
+<g id="cabeza">
+	<rect x="352" y="86" fill="#FCC792" width="80" height="121"/>
+	<ellipse fill="#FCC792" cx="392.4" cy="85.6" rx="40.4" ry="40.7"/>
+	<path fill="#9B7A4E" d="M352,91c0,0,13.6-48.6,48.2-24.8c0,0,9.9-18.8,26.6-1.8c0,0-1.2-19.5-34.4-19.5S348.6,73.1,352,91z"/>
+	<path fill="#9B7A4E" d="M358.4,61.2c0,0-16.3-64.3-51.7-30.8s25.7,115.2-38.1,112.9c0,0,47.5,17,44.9-28.4s-7.7-63.3,41.4-43.6"/>
+</g>
+<g id="brazos">
+	<path fill="none" stroke="#FCC792" stroke-width="17" stroke-linecap="round" stroke-miterlimit="10" d="M468.1,193.4
+		c0,0,94.2,77.8,59.3,195"/>
+	<path fill="none" stroke="#FCC792" stroke-width="17" stroke-linecap="round" stroke-miterlimit="10" d="M332.4,195
+		c0,0-99.1,84.4-62.4,211.7"/>
+	<path fill="none" stroke="#FCC792" stroke-width="14" stroke-linecap="round" stroke-miterlimit="10" d="M267.2,395.7
+		c0.8,3.6,1.8,7.3,2.9,11"/>
+</g>
+<g id="torso">
+	<g>
+		<path fill="#BE1E2D" d="M462.3,179c0,0-0.7,0-28.1,0c-0.6,0-1.1,0-1.7,0l-25.9,24.5L354.9,179c-1.5,0-2.9,0-4.3,0
+			c-9,0-17.7,0-17.7,0c-5.8,0-5,5.4-5,14l27.1,148.2l-9.8,70.9c0,8.6,6.7,56.9,12.5,56.9h97c5.8,0,13.5-48.3,13.5-56.9l-10.9-76.4
+			l15.1-142.3C472.4,184.8,468,179,462.3,179z"/>
+	</g>
+	<rect x="345.3" y="412.2" fill="#808285" width="122.8" height="56.9"/>
+	<polygon fill="#006838" points="354.9,179.1 406.5,203.6 432.4,179.1 439.9,179.1 406.8,210 343.2,179.1 	"/>
+	<circle fill="#BE1E2D" cx="457.1" cy="244.5" r="34.6"/>
+	<circle fill="#AA1F2F" cx="389.4" cy="252.5" r="36.1"/>
+	<polygon fill="#006838" points="491.1,239.5 336.5,239.5 334,225.7 486.7,226.5 	"/>
+	<polygon fill="#FCC792" points="355.1,341.2 457.5,336.7 468.6,413.4 345.3,412.2 	"/>
+	<polygon fill="#006838" points="457.9,339.5 355.1,341.4 352.7,328 457.9,328 	"/>
+	<circle opacity="0.2" cx="401.8" cy="245.8" r="7.8"/>
+	<circle opacity="0.2" cx="479.8" cy="245.8" r="7.8"/>
+	<path fill="#006838" d="M491.1,239.5c0,0-0.5-8.7-4.4-13"/>
+	<text transform="matrix(1 0 0 1 419.3156 238)" fill="#FFFFFF" font-family="'MyriadPro-Regular'" font-size="30.1113">7</text>
+</g>
+<g id="piernas">
+	<rect x="345" y="412" fill="#808285" width="49" height="270"/>
+	<rect x="418" y="412" fill="#808285" width="49" height="270"/>
+	<rect x="345.3" y="412.2" fill="#808285" width="122.8" height="56.9"/>
+</g>
+</svg>
