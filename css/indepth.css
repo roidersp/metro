@@ -176,6 +176,7 @@
 
 .metro_texto_c1 .metro_texto_normal{
 	font-size: 24px;
+	line-height: 26px;
 }
 
 .metro_texto_c1 .metro_texto_big{
@@ -211,6 +212,7 @@
 	background: white;
 	font-size: 22px;
 	padding: 15px;
+	line-height: 24px;
 }
 
 .metro_texto_c3 .metro_text_left{
