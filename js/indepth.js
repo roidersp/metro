@@ -147,7 +147,11 @@ $(document).ready(function(){
 });
 
 window.addEventListener("orientationchange", function() {
-alert(window.orientation);
+	if(window.orientation == 90 || window.orientation == -90){
+		indepth_skrllr();
+	}else{
+		
+	}
 }, false)
 
 $(window).on("resize", function(){
