@@ -237,6 +237,26 @@
 	line-height: 20px;
 }
 
+.metro_video_cont{
+}
+
+.metro_video_cont div {
+	position:relative;
+	padding-bottom:56.25%;
+	padding-top:30px;
+	height:0;
+	overflow:hidden;
+}
+
+.metro_video_cont iframe, .video-container object, .video-container embed {
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+}
+
+
 
 /**** Primera estacion ****/
 
@@ -244,6 +264,14 @@
 
 .elements{
 	display: inline-block;
+	position: absolute;
+	z-index: 2;
+}
+
+.metro_pasto{
+	background: #527E3B;
+	height: 135em;
+	bottom: 0;
 	position: absolute;
 }
 
