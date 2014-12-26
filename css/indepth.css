@@ -297,47 +297,47 @@
 	}
 	
 	.metro_texto_c1{
-		width: 160px;
+		width: 150px;
 	}
 	
 	
 	.metro_texto_c1 .metro_texto_header{
 		height: 22px;
 		line-height: 22px;
-		font-size: 13px;
+		font-size: 12px;
 		padding: 0 7px ;		
 	}
 	
 	.metro_texto_c1 .metro_texto_content{
-		padding: 7px 7px ;
+		padding: 6px6px ;
 	
 	}
 	
 	.metro_texto_c1 .metro_texto_normal{
 		font-size: 12px;
-		line-height: 13px;
+		line-height: 12px;
 	}
 	
 	.metro_texto_c1 .metro_texto_big{
-		font-size: 22px;
-		line-height: 23px;
+		font-size: 20px;
+		line-height: 22px;
 	}
 	
 	.metro_texto_c2{
-		width: 165px;
+		width: 160px;
 	}
 	
 	.metro_texto_c2 .metro_texto_header{
-		font-size: 12px;
-		height: 22px;
-		line-height: 22px;
-		padding: 0 7px;
+		font-size: 11px;
+		height: 20px;
+		line-height: 20px;
+		padding: 0 5px;
 	}
 	
 	.metro_texto_c2 .metro_texto_content{
-		font-size: 11px;
-		padding: 7px;
-		line-height: 12px;
+		font-size: 10px;
+		padding: 5px;
+		line-height: 11px;
 	}
 	
 	
@@ -347,14 +347,14 @@
 	}
 	
 	.metro_texto_c3 .metro_texto_big{
-		font-size: 14px;
-		padding-left: 12px;
-		line-height: 14px;
+		font-size: 12px;
+		padding-left: 10px;
+		line-height: 13px;
 	}
 	
 	.metro_texto_c3 .metro_texto_normal{
 		font-size: 10px;
-		margin-left: 12px;
+		margin-left: 10px;
 		line-height: 10px;
 	}
 	
