@@ -19,7 +19,6 @@ $(window).scroll(function() {
         $('html, body').scrollLeft(documentScrollTop);
     }
     
-    console.log($(document).scrollTop());
 });
 
 window.addEventListener("load",function() {
@@ -146,6 +145,10 @@ $(document).ready(function(){
 	indepth_preloadImgs();
     //loadDisqus($("#indepth_coments"),disqus_url, "http://juanfutbol.com/indepth/"+disqus_url);	
 });
+
+window.addEventListener("orientationchange", function() {
+alert(window.orientation);
+}, false)
 
 $(window).on("resize", function(){
 	indepth_sizeAdjust(false);
