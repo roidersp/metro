@@ -381,4 +381,16 @@
 
 /******************* vocho *******************/
 
+.metro_texto_c2 .metro_texto_big{
+	font-size: 65px;
+	font-weight: 600;
+	line-height: 65px;
+	color: #000;
+}
+
+@media screen and (max-height: 600px){
+	.metro_texto_c2 .metro_texto_big {
+	    font-size: 25px;
+	    line-height: 20px;
+	}
 }
