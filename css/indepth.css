@@ -47,7 +47,7 @@
      display: -ms-inline-flexbox;
      display: inline-flex;
 	width: auto;
-	height: 756px;
+	height: 756em;
 	position: fixed;
 	bottom: 0px;
 	left: 0px;
@@ -380,7 +380,7 @@
 		height: 22px;
 		line-height: 22px;
 		font-size: 12px;
-		padding: 0 7px ;		
+		padding: 0 6px ;		
 	}
 	
 	.metro_texto_c1 .metro_texto_content{

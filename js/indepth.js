@@ -133,13 +133,13 @@ if (window.DISQUS) {
    jQuery('head').append(dsq);
 }
 };
-
-$(document).ready(function(){
-	indepth_sizeAdjust(true);
-	if (window.matchMedia("(orientation: landscape)").matches) {
+if (window.matchMedia("(orientation: landscape)").matches) {
 		indepth_orientacion=false;
 		indepth_skrllr();
 	}
+$(document).ready(function(){
+	indepth_sizeAdjust(true);
+	
 	var ventana_alto = $(window).height();
 	var mobile=detect_mobile();
 	indepth_preloadImgs();
