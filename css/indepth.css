@@ -47,7 +47,7 @@
      display: -ms-inline-flexbox;
      display: inline-flex;
 	width: auto;
-	height: 756px;
+	height: 756em;
 	position: fixed;
 	bottom: 0px;
 	left: 0px;
@@ -246,6 +246,47 @@
 	line-height: 20px;
 }
 
+.metro_texto_c4{
+	width: 400px;
+	height: auto;
+	position: absolute;
+	display: block;
+	color: #573A0D;
+	font-weight: 600;
+
+}
+
+
+.metro_texto_c4 .metro_texto_header{
+	background: #B4933F;
+	height: 44px;
+	line-height: 44px;
+	width: 100%;
+	font-size: 22px;
+	padding: 0 15px;	
+}
+
+.metro_texto_c4 .metro_texto_content{
+	width: 100%;
+	background: #F8AB20;
+	padding: 15px 15px ;
+
+}
+
+.metro_texto_c4 .metro_texto_normal{
+	font-size: 24px;
+	line-height: 26px;
+}
+
+.metro_texto_c4 .metro_texto_big{
+	font-size: 44px;
+	font-weight: 600;
+	line-height: 46px;
+	margin-bottom: 10px;
+}
+
+
+
 .metro_video_cont{
 }
 
@@ -264,6 +305,40 @@
 	width:100%;
 	height:100%;
 	z-index: 20;
+}
+
+#estacion6 {
+	background: #18212D;
+	
+}
+
+#estacion6 .marquesina{
+	height: 30em;
+	width: 100%;
+	position: absolute;
+	left: 0;
+	top: 15em;
+	z-index: 100;
+}
+
+.marquesina_C{
+	width: 100%;
+	display: inline-block;
+}
+
+.mar1{
+	height: 22em;
+	background-color: #AB6E16;
+}
+
+.mar2{
+	height: 1em;
+	background-color: #B87717;
+}
+
+.mar3{
+	height: 7em;
+	background-color: #DF8E1A;
 }
 
 
@@ -297,47 +372,47 @@
 	}
 	
 	.metro_texto_c1{
-		width: 160px;
+		width: 140px;
 	}
 	
 	
 	.metro_texto_c1 .metro_texto_header{
 		height: 22px;
 		line-height: 22px;
-		font-size: 13px;
-		padding: 0 7px ;		
+		font-size: 12px;
+		padding: 0 6px ;		
 	}
 	
 	.metro_texto_c1 .metro_texto_content{
-		padding: 7px 7px ;
+		padding: 6px 6px ;
 	
 	}
 	
 	.metro_texto_c1 .metro_texto_normal{
 		font-size: 12px;
-		line-height: 13px;
+		line-height: 12px;
 	}
 	
 	.metro_texto_c1 .metro_texto_big{
-		font-size: 22px;
-		line-height: 23px;
+		font-size: 20px;
+		line-height: 22px;
 	}
 	
 	.metro_texto_c2{
-		width: 165px;
+		width: 150px;
 	}
 	
 	.metro_texto_c2 .metro_texto_header{
-		font-size: 12px;
-		height: 22px;
-		line-height: 22px;
-		padding: 0 7px;
+		font-size: 11px;
+		height: 20px;
+		line-height: 20px;
+		padding: 0 5px;
 	}
 	
 	.metro_texto_c2 .metro_texto_content{
-		font-size: 11px;
-		padding: 7px;
-		line-height: 12px;
+		font-size: 10px;
+		padding: 5px;
+		line-height: 11px;
 	}
 	
 	
@@ -347,14 +422,14 @@
 	}
 	
 	.metro_texto_c3 .metro_texto_big{
-		font-size: 14px;
-		padding-left: 12px;
-		line-height: 14px;
+		font-size: 12px;
+		padding-left: 10px;
+		line-height: 13px;
 	}
 	
 	.metro_texto_c3 .metro_texto_normal{
 		font-size: 10px;
-		margin-left: 12px;
+		margin-left: 10px;
 		line-height: 10px;
 	}
 	
@@ -373,11 +448,31 @@
 
 @media screen and (max-width: 480px){
 	
-	#horizontal_content{
-	height: 360px;
+		#horizontal_content{
+		height: 360px;
+	}
+	
 }
 
+/******************* vocho *******************/
 
-	
-	
+.metro_texto_c2 .metro_texto_big{
+	font-size: 65px;
+	font-weight: 600;
+	line-height: 65px;
+	color: #000;
+}
+
+.indepth_asteroides{
+	background-image: url(../images/asteroides.svg);
+	background-repeat: repeat-x;
+	width: 100%;
+	height: 100%;
+}
+
+@media screen and (max-height: 600px){
+	.metro_texto_c2 .metro_texto_big {
+	    font-size: 25px;
+	    line-height: 20px;
+	}
 }
