@@ -40,6 +40,17 @@
 	height: 100%;
 }
 
+.mg_portada{
+	background-image: url(../images/portada.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: none;
+	position: fixed;
+	top:0;
+	left: 0;
+	z-index: 10000;
+}
+
 .horizontal_content{
 	display: -webkit-inline-box;
      display: -webkit-inline-flex;
@@ -458,13 +469,13 @@
 	}
 	
 	.metro_texto_c3 .metro_text_left{
-		width: 30px;
+		width: 20px;
 	}
 	
 	.metro_texto_c3 .metro_texto_big{
-		font-size: 11px;
+		font-size: 10px;
 		padding-left: 5px;
-		line-height: 12px;
+		line-height: 11px;
 	}
 	
 	.metro_texto_c3 .metro_texto_normal{
