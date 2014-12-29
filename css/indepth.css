@@ -474,7 +474,34 @@
 	}
 	
 	
-	
+	.metro_texto_c4{
+	width: 180px;
+
+}
+
+
+.metro_texto_c4 .metro_texto_header{
+	height:22px;
+	line-height: 22px;
+	font-size: 9px;
+	padding: 0 6px;	
+}
+
+.metro_texto_c4 .metro_texto_content{
+	padding: 6px 6px ;
+
+}
+
+.metro_texto_c4 .metro_texto_normal{
+	font-size: 12px;
+	line-height: 13px;
+}
+
+.metro_texto_c4 .metro_texto_big{
+	font-size: 22px;
+	line-height: 23px;
+	margin-bottom: 5px;
+}
 	
 
 }
