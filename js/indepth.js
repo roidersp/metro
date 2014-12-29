@@ -37,7 +37,7 @@ window.addEventListener("load",function() {
 
 var indepth_skrllr=function(){
 	 s = skrollr.init();
-	 $("body").css("width",($("body").outerHeight()+100)+"px");
+	 $("body").css("width",($("body").outerHeight()+800)+"px");
 }
 
 var indepth_sizeAdjust = function(firstTime){
