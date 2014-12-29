@@ -24,7 +24,7 @@ $(window).scroll(function() {
 var ventana_ancho = $(window).width();
 $(".estacionfinal").css("width",ventana_ancho);
 
-var t=$(".horizontal_content").outerWidth()- ventana_ancho;
+var t=$(".horizontal_content").outerWidth()-ventana_ancho;
 $(".horizontal_content").attr("data-_box-20000p","transform:translate(-"+t+"px,0%);");
 
 window.addEventListener("load",function() {
@@ -37,7 +37,7 @@ window.addEventListener("load",function() {
 
 var indepth_skrllr=function(){
 	 s = skrollr.init();
-	 $("body").css("width",$("body").outerHeight()+"px");
+	 $("body").css("width",($("body").outerHeight()+800)+"px");
 }
 
 var indepth_sizeAdjust = function(firstTime){
