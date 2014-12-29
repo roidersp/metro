@@ -10,15 +10,6 @@ var s;
 /***** Manejo de scroll ****/
 var lastScrollLeft = 0;
 
-
-$( document ).ready(function() {
-        console.log( "document loaded" );
-    });
- 
-    $( document ).load(function() {
-        console.log( "window loaded" );
-    });
-
 var ventana_ancho = $(window).width();
 $(".estacionfinal").css("width",ventana_ancho);
 
@@ -139,10 +130,11 @@ if (window.DISQUS) {
 }
 };
 
-
 $(".mg_portada").css("height",$(window).height()+"px");
 $(".mg_portada").css("width",$(window).width()+"px");
 
+ $('html, body').scrollLeft(0);
+ $('html, body').scrollTop(0);
 
 $(document).ready(function(){
 	indepth_sizeAdjust(true);
