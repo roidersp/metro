@@ -308,7 +308,6 @@
 }
 
 #estacion6 {
-	background: #18212D;
 	
 }
 
@@ -415,22 +414,20 @@
 		line-height: 11px;
 	}
 	
-	
-	.metro_texto_c3 .metro_text_r{
-		float: left;
-		
+	.metro_texto_c3 .metro_text_left{
+		width: 30px;
 	}
 	
 	.metro_texto_c3 .metro_texto_big{
-		font-size: 12px;
-		padding-left: 10px;
-		line-height: 13px;
+		font-size: 11px;
+		padding-left: 5px;
+		line-height: 12px;
 	}
 	
 	.metro_texto_c3 .metro_texto_normal{
-		font-size: 10px;
-		margin-left: 10px;
-		line-height: 10px;
+		font-size: 9px;
+		margin-left: 5px;
+		line-height: 9px;
 	}
 	
 	
@@ -476,3 +473,5 @@
 	    line-height: 20px;
 	}
 }
+
+
