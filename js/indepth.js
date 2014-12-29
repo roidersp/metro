@@ -173,6 +173,12 @@ $(document).ready(function(){
 
 window.addEventListener("orientationchange", function() {
 	if(window.orientation == 90 || window.orientation == -90){
+		
+var ventana_ancho = $(window).width();
+$(".estacionfinal").css("width",ventana_ancho);
+
+var t=$(".horizontal_content").outerWidth()-ventana_ancho;
+$(".horizontal_content").attr("data-_box-20000p","transform:translate(-"+t+"px,0%);");
 		indepth_skrllr();
 		$(".mg_portada").css("display","none");
 	}else{
@@ -182,4 +188,6 @@ window.addEventListener("orientationchange", function() {
 
 $(window).on("resize", function(){
 	indepth_sizeAdjust(false);
+	$(".mg_portada").css("height",$(window).height()+"px");
+	$(".mg_portada").css("width",$(window).width()+"px");
 })
