@@ -603,7 +603,7 @@
 
 }
 
-@media screen and (max-height: 360px){
+@media screen and (max-height: 400px){
 	.indepth_pages{
 		font-size: .4px;
 	}
