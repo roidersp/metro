@@ -139,16 +139,8 @@ $(".mg_portada").css("width",$(window).width()+"px");
 
 $(document).ready(function(){
 	indepth_sizeAdjust(true);
-	if (window.matchMedia("(orientation: landscape)").matches) {
-		indepth_orientacion=false;
-		indepth_skrllr();
-		$(".mg_portada").css("display","none");
-		
-	}else{
-		$(".mg_portada").css("display","block");
-	}
-	var mobile=detect_mobile();
 	if(mobile){
+		$(".indepth_pages").css("font-size",".4px");
 		$(window).scroll(function() {
 	    var documentScrollLeft = $(document).scrollLeft();
 	     var documentScrollTop = $(document).scrollTop();
@@ -171,6 +163,17 @@ $(document).ready(function(){
     }
 	});
 	}
+	if (window.matchMedia("(orientation: landscape)").matches) {
+		indepth_orientacion=false;
+		
+		indepth_skrllr();
+		$(".mg_portada").css("display","none");
+		
+	}else{
+		$(".mg_portada").css("display","block");
+	}
+	var mobile=detect_mobile();
+	
 	
     
 	var ventana_alto = $(window).height();
