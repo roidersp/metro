@@ -1,3 +1,21 @@
+#nav-bar-wrapper, #body-wrapper, #top-bar-wrapper, #header{
+	display: none;
+}
+
+.indepth_juan{
+	width: 100em;
+	height: auto;
+	position: fixed;
+	top:15em;
+	left: 15em;
+	opacity: .7;
+	z-index: 900;
+	cursor: pointer;
+}
+
+.indepth_juan:hover{
+	opacity: 1;
+}
 .indepth_pages{
 	min-width: 960px;
 	position: fixed;
@@ -11,6 +29,54 @@
 	height: 100%;
 	
 }
+
+.indepth_share{
+		position: fixed;
+		right: 15em;
+		top: 15em;
+		z-index: 2000;
+		display: inline-block;
+		
+	}
+	
+	.indepth_share_item{
+		width: 40px;
+		height: 40px;
+		border-radius: 50%;
+		background-color: rgba(255, 255, 255, 0.2);
+		float: left;
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-size: auto 20px ;
+		margin-left: 7px;
+		cursor: pointer;
+	}
+	
+	.indepth_share_item.facebook{
+		background-image: url(../images/boton_facebook.png);
+	}
+	
+	.indepth_share_item.facebook:hover{
+		background-color: #3660A4;
+	}
+	
+	.indepth_share_item.twitter{
+		background-image: url(../images/boton_twitter.png);
+	}
+	
+	.indepth_share_item.twitter:hover{
+		background-color: #02B2F7;
+	}
+	
+	
+	.indepth_share_item.whatsapp{
+		display: none;
+		background-image: url(../images/boton_whatsapp.png);
+	}
+	
+	.indepth_share_item.whatsapp:hover{
+		background-color: #85D86D;
+	}
 
 .indepth_page{
 	width: 100%;

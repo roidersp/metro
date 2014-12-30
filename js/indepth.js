@@ -18,9 +18,10 @@ $(".horizontal_content").attr("data-_box-20000p","transform:translate(-"+t+"px,0
 
 window.addEventListener("load",function() {
 	// Set a timeout...
+	var documentScrollTop = $(document).scrollTop();
 	setTimeout(function(){
 		// Hide the address bar!
-		window.scrollTo(0, 1);
+		window.scrollTo(0, documentScrollTop+1);
 	}, 0);
 });
 
@@ -146,7 +147,20 @@ $(document).ready(function(){
 	}else{
 		$(".mg_portada").css("display","block");
 	}
-	$(window).scroll(function() {
+	var mobile=detect_mobile();
+	if(mobile){
+		$(window).scroll(function() {
+	    var documentScrollLeft = $(document).scrollLeft();
+	     var documentScrollTop = $(document).scrollTop();
+	    if (lastScrollLeft != documentScrollLeft) {
+	        lastScrollLeft = documentScrollLeft;
+	        $('html, body').scrollTop((lastScrollLeft*2));
+	    }else{
+	        $('html, body').scrollLeft(documentScrollTop);
+	    }
+	});
+	}else{
+		$(window).scroll(function() {
     var documentScrollLeft = $(document).scrollLeft();
      var documentScrollTop = $(document).scrollTop();
     if (lastScrollLeft != documentScrollLeft) {
@@ -155,8 +169,10 @@ $(document).ready(function(){
     }else{
         $('html, body').scrollLeft(documentScrollTop);
     }
+	});
+	}
+	
     
-});
 	var ventana_alto = $(window).height();
 	var mobile=detect_mobile();
 	indepth_preloadImgs();
