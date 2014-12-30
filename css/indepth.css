@@ -35,7 +35,11 @@
 		right: 15em;
 		top: 15em;
 		z-index: 2000;
-		display: inline-block;
+		display: -webkit-inline-box;
+     display: -webkit-inline-flex;
+   display: -moz-inline-box;
+     display: -ms-inline-flexbox;
+     display: inline-flex;
 		
 	}
 	
@@ -50,6 +54,7 @@
 		background-size: auto 20px ;
 		margin-left: 7px;
 		cursor: pointer;
+		margin-bottom: 5px;
 	}
 	
 	.indepth_share_item.facebook{
