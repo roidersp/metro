@@ -154,7 +154,7 @@ $(document).ready(function(){
 	     var documentScrollTop = $(document).scrollTop();
 	    if (lastScrollLeft != documentScrollLeft) {
 	        lastScrollLeft = documentScrollLeft;
-	        $('html, body').scrollTop((lastScrollLeft*3));
+	        $('html, body').scrollTop((lastScrollLeft*4));
 	    }else{
 	        $('html, body').scrollLeft(documentScrollTop);
 	    }
