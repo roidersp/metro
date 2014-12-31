@@ -140,6 +140,7 @@ $(".mg_portada").css("width",$(window).width()+"px");
 $(document).ready(function(){
 	indepth_sizeAdjust(true);
 	if(mobile){
+		$("#drag").css("display","block");
 		$(".indepth_pages").css("font-size",".4px");
 		$(window).scroll(function() {
 	    var documentScrollLeft = $(document).scrollLeft();
