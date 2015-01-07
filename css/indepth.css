@@ -16,6 +16,13 @@
 .indepth_juan:hover{
 	opacity: 1;
 }
+
+#nav-bar-wrapper, #body-wrapper{
+	display: none;
+}
+
+
+
 .indepth_pages{
 	min-width: 960px;
 	position: fixed;
@@ -47,11 +54,18 @@
 		display: none;
 	}
 	
+		right: 3px;
+		top: 8px;
+		z-index: 2000;
+		
+	}
+	
 	.indepth_share_item{
 		width: 40px;
 		height: 40px;
 		border-radius: 50%;
 		background-color: rgba(255, 255, 255, 0.2);
+		background-color: rgba(255, 255, 255, 0.4);
 		float: left;
 		background-repeat: no-repeat;
 		background-position: center center;
@@ -509,6 +523,10 @@
 	
 	#horizontal_content{
 		height: 360px;
+	}
+	
+	.indepth_share_item.whatsapp{
+		display: block;
 	}
 	
 	.indepth_pages{
